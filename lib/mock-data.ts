@@ -26,6 +26,16 @@ export type Partida = {
   regrasAdicionais: string[];
 };
 
+export type AnuncioAluguel = {
+  id: string;
+  item: string;
+  descricao: string;
+  precoLabel: string;
+  anuncianteNome: string;
+  anuncianteTipo: TipoConta;
+  contato: string;
+};
+
 export const EQUIPAMENTO_OBRIGATORIO = [
   'Óculos de proteção balístico',
   'Luvas',
@@ -54,6 +64,27 @@ export const USUARIO_INICIAL: Usuario = {
   telefone: '(11) 9 8888-7777',
   tipo: 'jogador',
 };
+
+export const ANUNCIOS_INICIAIS: AnuncioAluguel[] = [
+  {
+    id: 'a1',
+    item: 'Réplica AEG M4 (revisada)',
+    descricao: 'Pronta pra uso, com 2 baterias. Retirada em Guarulhos.',
+    precoLabel: 'R$ 50/dia',
+    anuncianteNome: 'Carlos Mendes',
+    anuncianteTipo: 'organizador',
+    contato: '(11) 9 7777-6666',
+  },
+  {
+    id: 'a2',
+    item: 'Colete plate carrier + placas',
+    descricao: 'Tamanho M/G, ajustável. Posso levar na partida.',
+    precoLabel: 'R$ 20/dia',
+    anuncianteNome: 'Bruno Alves',
+    anuncianteTipo: 'jogador',
+    contato: '(11) 9 6666-5555',
+  },
+];
 
 export const PARTIDAS_INICIAIS: Partida[] = [
   {

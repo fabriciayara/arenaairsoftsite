@@ -24,6 +24,7 @@ export default function RootLayout() {
           <Stack.Screen name="partidas/index" options={{ title: 'Partidas', headerBackVisible: false }} />
           <Stack.Screen name="criar-partida" options={{ title: 'Criar partida' }} />
           <Stack.Screen name="perfil" options={{ title: 'Perfil' }} />
+          <Stack.Screen name="aluguel-comunidade" options={{ title: 'Aluguel entre jogadores' }} />
           <Stack.Screen name="partida/[id]/index" options={{ title: 'Partida' }} />
           <Stack.Screen name="partida/[id]/equipamentos" options={{ title: 'Equipamentos' }} />
           <Stack.Screen name="partida/[id]/alugar-equipamento" options={{ title: 'Alugar equipamento' }} />

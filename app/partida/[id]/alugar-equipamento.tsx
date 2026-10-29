@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, Linking } from 'react-native';
+import { router } from 'expo-router';
 import { Button, Card, Screen } from '../../../components/ui';
 import { colors, spacing } from '../../../lib/theme';
 
@@ -35,6 +36,11 @@ export default function AluguelEquipamento() {
       <Text style={styles.microcopy}>Pagamentos são acordados com o organizador.</Text>
 
       <Button title="Conversar no WhatsApp" onPress={handleWhatsApp} />
+      <Button
+        title="Ver equipamento de outros jogadores"
+        variant="outline"
+        onPress={() => router.push('/aluguel-comunidade')}
+      />
     </Screen>
   );
 }

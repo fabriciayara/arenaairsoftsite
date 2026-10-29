@@ -61,6 +61,11 @@ export default function Perfil() {
       </View>
 
       <Button title="Salvar alterações" onPress={handleSalvar} />
+      <Button
+        title="Aluguel entre jogadores"
+        variant="outline"
+        onPress={() => router.push('/aluguel-comunidade')}
+      />
       <Button title="Sair da conta" variant="text" onPress={handleSair} />
     </Screen>
   );
